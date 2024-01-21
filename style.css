@@ -1,0 +1,169 @@
+@font-face {
+    font-family: 'Young Serif';
+    src: url('/assets/fonts/young-serif/YoungSerif-Regular.ttf')format(truetype);
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('/assets/fonts/outfit/Outfit-VariableFont_wght.ttf')format(truetype);
+}
+
+:root {
+    --clr-nutmeg: hsl(14, 45%, 36%);
+    --clr-dark-raspberry: 332, 51%, 32%;
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-rose-white: hsl(330, 100%, 98%);
+    --clr-eggshell: hsl(30, 54%, 90%);
+    --clr-light-grey: hsl(30, 18%, 87%);
+    --clr-wenge-brown: hsl(30, 10%, 34%);
+    --clr-dark-charcoal: hsl(24, 5%, 18%);
+
+    --ff-accent: 'Young Serif';
+    --ff-base: 'Outfit';
+    --fw-400: 400;
+    --fw-600: 600;
+    --fw-700: 700;
+}
+
+/*
+    1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+/*
+    2. Remove default margin
+*/
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+/*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+*/
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+/*
+    5. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+/*
+    6. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+    font: inherit;
+}
+/*
+    7. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+    /* line-height: 1; */
+}
+
+/* General */
+
+body {
+    font-family: var(--ff-base);
+    color: var(--clr-wenge-brown);
+    font-weight: var(--fw-400);
+    font-size: 1rem;
+    /* height: 100vh; */
+    background-color: var(--clr-eggshell);
+    display: grid;
+    place-content: center;
+}
+
+hr {
+    border: 1px solid var(--clr-light-grey);
+}
+
+.title {
+    font-family: var(--ff-accent);
+    font-size: 2rem;
+    color: var(--clr-dark-charcoal);
+    line-height: 1;
+}
+
+.subtitle {
+    font-family: var(--ff-accent);
+    font-size: 1.5rem;
+    color: var(--clr-nutmeg);
+}
+
+h3 {
+    font-weight: var(--fw-700);
+    font-size: 1.1rem;
+    color: hsl(var(--clr-dark-raspberry));
+    line-height: 1;
+}
+
+.list {
+    padding-left: 1.3rem;
+}
+
+li {
+    padding: .25rem 0 .25rem 1rem;
+}
+
+ul li::marker {
+    font-size: .75rem;
+}
+
+.list li::marker {
+    font-weight: var(--fw-700);
+    color: var(--list-color);
+}
+
+li span {
+    font-weight: var(--fw-700);
+}
+
+.flex-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem 2rem;
+}
+
+.nutrition-value {
+    font-weight: var(--fw-600);
+    color: var(--clr-nutmeg);
+}
+
+/* Main */
+
+.recipe {
+    background-color: var(--clr-white);
+    border-radius: 1rem;
+}
+
+.recipe__container {
+    padding: 2rem;
+    display: grid;
+    gap: 1.2rem;
+}
+
+.recipe__container__preparation {
+    background-color: var(--clr-rose-white);
+    border-radius: .5rem;
+    padding: 1.5rem;
+    display: grid;
+    gap: 1rem;
+    align-items: start;
+}
+
+.list[data-item-type="accent-1"] {
+    --list-color: var(--clr-dark-raspberry);
+}
+
+.list[data-item-type="accent-2"] {
+    --list-color: var(--clr-nutmeg);
+}

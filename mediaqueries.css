@@ -1,0 +1,15 @@
+@media (min-width: 600px) {
+    .recipe {
+        width: 38rem;
+        margin: 3rem;
+    }
+
+    .recipe__image {
+        max-width: 36rem;
+        padding: 2rem 2rem 0 2rem;
+    }
+
+    .recipe__image img {
+        border-radius: .5rem;
+    }
+}
