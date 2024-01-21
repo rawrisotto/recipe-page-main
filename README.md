@@ -22,7 +22,7 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 ### Links
 
 - Solution URL: [GitHub](https://github.com/rawrisotto/recipe-page-main/tree/main)
-- Live Site URL: [Netlify](https://your-live-site-url.com)
+- Live Site URL: [Netlify](https://65ac9503f20cd11da57673ab--grand-elf-339f06.netlify.app/)
 
 ## My process
 
